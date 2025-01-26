@@ -78,14 +78,6 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ---
 
-## Screenshots 📸
-Add some screenshots of your interface here to showcase your work. For example:
-- **Initial Sudoku Grid**  
-  _[Insert Image Here]_
-  
-- **Solved Puzzle**  
-  _[Insert Image Here]_
-
 ---
 
 ## License 📜
