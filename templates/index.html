@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script defer src="/static/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Sudoku Solver</h1>
+      <p class="subtitle">
+        Solve your Sudoku puzzles instantly and effortlessly.
+      </p>
+      <div class="grid">
+        <!-- Dynamic grid creation for precise alignment -->
+        <table>
+          {% for i in range(9) %}
+          <tr>
+            {% for j in range(9) %}
+            <td>
+              <input
+                type="text"
+                maxlength="1"
+                class="cell"
+                id="cell-{{ i }}-{{ j }}"
+              />
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div class="buttons">
+        <button id="solveButton" class="btn">Solve</button>
+        <button id="resetButton" class="btn">Reset</button>
+      </div>
+      <p id="message"></p>
+    </div>
+  </body>
+</html>
